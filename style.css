@@ -1,0 +1,42 @@
+body {
+	width: 1000px;
+	background-color: black;
+	margin: auto;
+}
+table th {
+	display: inline-block;
+	margin: 15px 25px;
+}
+table {
+	width: 900px;
+	margin: 10px auto;
+	text-align: center;
+	border: 2px solid black;
+}
+h1 {
+	text-decoration: underline;
+	width: 250px;
+	margin: 20px;
+	display: block;
+	margin: auto;
+}
+form input{
+	display: block;
+	margin: 15px;
+}
+form{
+	width: 500px;
+	margin: 10px auto; 
+	background-color: white;
+	padding: 15px;
+	border-radius: 15px;
+	display: block;
+}
+#wrapper {
+	background: linear-gradient(to top, black, white);
+}
+tr {
+	display: block;
+	margin: 5px 30px; 
+}
+

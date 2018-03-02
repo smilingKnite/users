@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Users</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src= 'http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+	<script type="text/javascript">
+		
+		$(document).ready(function() {
+
+				var firstName = $('#first_Name').val();
+				var lastName = $('#last_Name').val();
+				var email = $('#email').val();
+				var contact = $('#contactN').val();
+			
+			$('.submi5').click(function() {
+				$('.one').append('<tr><td>' + $('#first_Name').val() + "</td></tr>");
+				$('.two').append('<tr><td>' + $('#last_Name').val() + "</td></tr>");
+				$('.three').append('<tr><td>' + $('#email').val() + "</td></tr>");
+				$('.four').append('<tr><td>' + $('#contactN').val() + "</td></tr>");
+				$('table tr').css('margin', '3px');
+				return false;
+
+			});
+			
+		});
+	</script>
+</head>
+<body>
+	<div id="wrapper">
+		<table>
+			<tr>
+				<th class="u one">First Name</th>
+
+				<th class="u two">Last Name</th>
+
+				<th class="u three">Email Address</th>
+
+				<th class="u four">Contact #</th>
+			</tr>
+		</table>
+
+		<h1>Add User</h1>
+
+		<form>
+			First Name : <input type="text" name="firstName" id="first_Name">
+
+			Last Name : <input type="text" name="lastName" id="last_Name">
+
+			Email Address : <input type="text" name="email" id="email">
+
+			Contact # : <input type="text" name="contact" id="contactN">
+
+			<input type="submit" name="submit1" class="submi5">
+		</form>
+	</div>
+
+</body>
+</html>
